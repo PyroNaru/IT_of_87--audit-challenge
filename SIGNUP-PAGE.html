@@ -1,18 +1,61 @@
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Signup</title>
-    <link rel="stylesheet" href="Style.CSS" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup - Future Tech</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <h2>Register</h2>
+    <div class="split-screen-container">
+      <div class="form-section">
+        <h2>Create Account</h2>
+        <form action="action_page.php" method="post">
+          <div class="input-group">
+            <label for="uname"><b>Name</b></label>
+            <input
+              type="text"
+              placeholder="Enter Name"
+              name="uname"
+              id="uname"
+              required
+            />
+          </div>
 
-    Name<input /> Email<input /> Password<input /> Confirm Password<input />
+          <div class="input-group">
+            <label for="email"><b>Email</b></label>
+            <input
+              type="email"
+              placeholder="Enter Email"
+              name="email"
+              id="email"
+              required
+            />
+          </div>
 
-    <button>Create</button>
+          <div class="input-group">
+            <label for="psw"><b>Password</b></label>
+            <input
+              type="password"
+              placeholder="Enter Password"
+              name="psw"
+              id="psw"
+              required
+            />
+          </div>
 
-    <p>Already have an account? <a href="LOGIN Page.html">Login</a></p>
+          <button type="submit" class="signup-btn">Create</button>
 
-    <img src="image 1.png" />
+          <div class="form-footer">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="image-section">
+        <img src="image 1.png" alt="Signup Illustration" class="side-image" />
+      </div>
+    </div>
   </body>
 </html>
