@@ -66,15 +66,11 @@ input[type="password"] {
   background-color: #f1f5f9;
 }
 
-/* =========================================
-   3. NAVIGATION (Header)
-   ========================================= */
 header {
   background-color: var(--secondary-color);
   padding: 1rem 2rem;
-  display: flex; /* Puts items in a row */
-  justify-content: space-between; /* Pushes content to edges */
-  align-items: center;
+  display: flex;
+  justify-content: space-between;
 }
 
 .top-bar {
@@ -87,9 +83,6 @@ header {
   color: white;
 }
 
-/* =========================================
-   4. HERO SECTION (Landing Page)
-   ========================================= */
 .hero {
   display: flex;
   align-items: center;
@@ -100,7 +93,7 @@ header {
 }
 
 .hero-content {
-  flex: 1; /* Takes up half space */
+  flex: 1;
   padding-right: 2rem;
 }
 
@@ -113,7 +106,7 @@ header {
 }
 
 .hero-img {
-  flex: 1; /* Takes up half space */
+  flex: 1;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
