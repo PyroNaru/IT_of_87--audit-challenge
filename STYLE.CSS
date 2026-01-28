@@ -1,17 +1,14 @@
-/* =========================================
-   1. VARIABLES & RESET (The Foundation)
-   ========================================= */
 :root {
-  --primary-color: #3b82f6; /* Electric Blue */
-  --secondary-color: #1e293b; /* Dark Slate */
-  --bg-color: #0f172a; /* Very Dark Blue (Future Tech vibe) */
-  --text-color: #f8fafc; /* Almost White */
+  --primary-color: #3b82f6;
+  --secondary-color: #1e293b;
+  --bg-color: #0f172a;
+  --text-color: #f8fafc;
   --card-bg: #1e293b;
   --font-main: "Arial", sans-serif;
 }
 
 * {
-  box-sizing: border-box; /* Makes styling sizes predictable */
+  box-sizing: border-box;
 }
 
 body {
@@ -29,13 +26,10 @@ a {
 }
 
 img {
-  max-width: 100%; /* Prevents images from overflowing screens */
+  max-width: 100%;
   display: block;
 }
 
-/* =========================================
-   2. SHARED COMPONENTS (Buttons & Forms)
-   ========================================= */
 button,
 .login-btn,
 .signup-btn {
@@ -47,7 +41,7 @@ button,
   cursor: pointer;
   font-size: 1rem;
   transition: opacity 0.3s;
-  width: 100%; /* Default to full width for forms */
+  width: 100%;
 }
 
 button:hover {
@@ -111,9 +105,6 @@ header {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* =========================================
-   5. FEATURES & CARDS (Landing Page)
-   ========================================= */
 .about,
 .features {
   text-align: center;
@@ -125,7 +116,7 @@ header {
   justify-content: center;
   gap: 20px;
   margin-top: 2rem;
-  flex-wrap: wrap; /* Allows cards to wrap on mobile */
+  flex-wrap: wrap;
 }
 
 .card {
@@ -139,12 +130,9 @@ header {
   border: 1px solid #334155;
 }
 
-/* =========================================
-   6. SPLIT SCREEN (Signup Page)
-   ========================================= */
 .split-screen-container {
   display: flex;
-  min-height: 100vh; /* Full screen height */
+  min-height: 100vh;
 }
 
 .form-section {
@@ -154,68 +142,62 @@ header {
   justify-content: center;
   padding: 3rem;
   background-color: white;
-  color: #333; /* Dark text on white background for readability */
-}
-
-.image-section {
-  flex: 1;
-  background-image: url("image 1.png"); /* Fallback */
-  background-color: var(--secondary-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.side-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* =========================================
-   7. LOGIN CARD (Login Page)
-   ========================================= */
-.login-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: var(--bg-color);
-}
-
-.login-card {
-  background-color: white;
   color: #333;
-  padding: 2.5rem;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.form-footer {
-  margin-top: 1rem;
-  text-align: center;
-  font-size: 0.9rem;
-}
-
-/* =========================================
-   8. MOBILE RESPONSIVENESS
-   ========================================= */
-@media screen and (max-width: 768px) {
-  .hero,
-  .split-screen-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-content {
-    padding-right: 0;
-    margin-bottom: 2rem;
-  }
 
   .image-section {
-    display: none; /* Hide side image on mobile to save space */
+    flex: 1;
+    background-image: url("image 1.png");
+    background-color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .side-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+  }
+
+  .login-card {
+    background-color: white;
+    color: #333;
+    padding: 2.5rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .form-footer {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero,
+    .split-screen-container {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .hero-content {
+      padding-right: 0;
+      margin-bottom: 2rem;
+    }
+
+    .image-section {
+      display: none;
+    }
   }
 }
